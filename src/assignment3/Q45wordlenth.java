@@ -1,8 +1,19 @@
 package assignment3;
 
+import java.util.Scanner;
+
 public class Q45wordlenth {
 	public static void main(String[] args) {
-		String s = "california";
+/*		 Getting the first and last n letters from a word where wordlength > 2n.
+		    Ex: Input: calrifonia,3.
+		        output: calnia.
+*/
+		
+		Scanner se= new Scanner (System.in);
+		System.out.println("enter string:=");
+		String s= se.next();
+		
+	//	String s = "california";
 
 		int no = 3;
 		String n = "";

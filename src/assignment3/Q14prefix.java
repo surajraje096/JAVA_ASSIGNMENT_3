@@ -1,25 +1,34 @@
 package assignment3;
 
+import java.util.Scanner;
+
 public class Q14prefix {
 	public static void main(String[] args) {
+//		String array will be given.if a string is Prefix of an any other string in that array means count.
 
-		String n[] = { "abcpqr", "abc", "xyx", "acxyz" };
-		int ans = 0;
+	
+		String n[] = { "abcpq", "abc", "xyx", "abcyz" };
+		int count = 0, ans = 0;
+
 		for (int i = 0; i < n.length; i++) {
-			String n1 = n[i];
-			int count = 0;
-			for (int j = 0; j < n.length; j++) {
-				String n2 = n[j];
+			String x = n[i];
 
-				if (n2.startsWith(n1)) {
+			for (int j = 0; j < n.length; j++) {
+				String y = n[j];
+
+				if (x.startsWith(y)) {
 					count++;
 				}
 			}
+
 			if (count > 1) {
 				ans++;
+				count = 0;
+			} else {
+				count = 0;
 			}
 		}
-		System.out.println(ans);
+		System.out.println("String prefix to any other string:" + ans);
 
 	}
 

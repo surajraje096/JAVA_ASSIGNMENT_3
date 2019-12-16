@@ -1,8 +1,16 @@
 package assignment3;
 
+import java.util.Scanner;
+
 public class Q49perfectNumber {
 	public static void main(String[] args) {
-		int no = 6;
+		// perfect no or not?
+		
+		Scanner se =new Scanner (System.in);
+		System.out.println("enter digit");
+		int no =se.nextInt();
+		
+		//int no = 6;
 
 		int ans = 0;
 

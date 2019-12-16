@@ -1,23 +1,44 @@
 package assignment3;
 
+import java.util.Scanner;
+
 public class Q35replace {
 
 	public static void main(String[] args) {
+		
+/*		 i/p: bengal
+		    o/p: ceogbl
+		    if z is there replace with a
 
-		String s = "bengal";
+*/
+		Scanner se = new Scanner (System.in);
+		System.out.println("enter String:= ");
+		String s= se.next();
 
-		String n = "";
-		for (int i = 0; i < s.length(); i++) {
-			char c = s.charAt(i);
-			if (c == 'z') {
-				n = n + 'a';
+	//	String s = "bengal";
+
+		String ip = "bengzl";
+
+		String op = " ";
+
+		for (int i = 0; i < ip.length(); i++) {
+			if (i % 2 == 0) {
+				char c = ip.charAt(i);
+				if (c == 'z') {
+					c = 'a';
+					op += c;
+				} else {
+
+					c++;
+					op += c;
+				}
 			} else {
-				int no = (int) c;
-				char nj = ((char) (no + 1));
-				n = n + nj;
+				char c = ip.charAt(i);
+				op += c;
 			}
-		}
-		System.out.println(n);
 
+		}
+
+		System.out.println(op);
 	}
 }

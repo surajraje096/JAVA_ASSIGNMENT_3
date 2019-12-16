@@ -1,9 +1,18 @@
 package assignment3;
 
+import java.util.Scanner;
+
 public class Q39ovel {
 	public static void main(String[] args) {
-
-		String s = "the sum raise in the east aeiou";
+		/*
+		 * input1="the sun raises in the east"; output1=raises; count no vowels in each
+		 * word and print the word which has max no of vowels if two word has max no of
+		 * vowel print the first one
+		 */
+		Scanner se = new Scanner(System.in);
+		System.out.println("enter the string:=   ");
+		String s = se.nextLine();
+		// String s = "the sum raise in the east ";
 
 		String n[] = s.split(" ");
 		int no = 0;

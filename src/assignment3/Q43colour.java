@@ -2,6 +2,12 @@ package assignment3;
 
 public class Q43colour {
 	public static void main(String[] args) {
+		/*
+		 * Color Code Validation: String should starts with the Character '#'. Length of
+		 * String is 7. It should contain 6 Characters after '#' Symbol. It should
+		 * contain Characters Between 'A-F' and Digits '0-9'. if String is acceptable
+		 * then Output1=1 else Output1=-1;
+		 */
 
 		String s = "#NAMja8";
 		int count = 0;

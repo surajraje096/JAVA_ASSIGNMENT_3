@@ -1,9 +1,22 @@
 package assignment3;
 
+import java.util.Scanner;
+
 public class Q33vowel {
 	public static void main(String[] args) {
 
-		String s = "AeiUUamlp";
+		/*In a string check whether all the vowels are present
+	    if yes return 1 else 2.
+	    ex: String 1="education"
+	        output=1.
+		*/
+		
+		Scanner se =new Scanner (System.in);
+		System.out.println("enter the string");
+		String s= se.next();
+		
+		//String s ="education";
+		//String s = "AeiUUamlp";
 
 		int a = 0, e = 0, i = 0, o = 0, u = 0;
 		for (int j = 0; j < s.length(); j++) {

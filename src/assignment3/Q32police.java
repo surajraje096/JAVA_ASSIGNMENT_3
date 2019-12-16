@@ -6,8 +6,18 @@ import javax.swing.text.html.HTMLDocument.Iterator;
 
 public class Q32police {
 	public static void main(String[] args) {
+/*		
+		 i/p: Honesty is my best policy
+		    o/p: Honesty
+		    Return the maximum word length from the given string.
+		    If there are two words of same length then,
+		    return the word which comes first based on alphabetical order.
+
+*/
 		
-		String s = "a A 8 % &a &8 / %AAA %BBB";
+		
+		
+		String s = "Honesty is my best policy";
 		
 		String s1[]=s.split(" ");
 		int length=0;

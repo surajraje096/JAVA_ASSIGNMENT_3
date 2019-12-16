@@ -1,9 +1,23 @@
 package assignment3;
 
+import java.util.Scanner;
+
 public class Q26ISBnumber {
 	public static void main(String[] args) {
 
-		String s = "0201103311";
+		/* prove whether a number is ISBN number or not
+		    input="0201103311"
+		    ISBN number:  sum=0*10 +2*9+ 0*8 +1*7+ 1*6 +0*5+ 3*4 +3*3+ 1*2 +1*1
+		    sum%11==0 then it is ISBN number
+		*/
+		Scanner se = new Scanner (System.in);
+		System.out.println("Enter String:=");
+		String s= se.next();
+		
+		
+		
+		
+		//String s = "0201103311";
 
 		int no = Integer.parseInt(s);
 

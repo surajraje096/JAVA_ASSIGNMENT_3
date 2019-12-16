@@ -1,10 +1,24 @@
 package assignment3;
 
+import java.util.Scanner;
+
 public class Q34concat {
 
 	public static void main(String[] args) {
+		/*
+		 swap the every 2 chrecters in the given string 
+		    If size is odd number then keep the last letter as it is.
+		    Ex:- input: forget
+			 output: ofgrte
+		    Ex:- input  : NewYork
+		         output : eNYwrok
+		*/
+	Scanner se = new Scanner (System.in);
+	System.out.println("enter String:=   ");
+	String s= se.next();
+		
 
-		String s = "NewYork";
+		//String s = "NewYork";
 
 		String nj = "";
 		if (s.length() % 2 == 0) {

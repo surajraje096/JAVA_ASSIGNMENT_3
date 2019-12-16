@@ -1,12 +1,21 @@
 package assignment3;
 
 import java.util.LinkedHashSet;
+import java.util.Scanner;
 
 public class Q8Deleatrepited {
 
 	public static void main(String[] args) {
 
-		String s = "helloworld";
+		/*
+		 * INPUT1= helloworld INPUT2= 2. delete the char,if rpted twice. if occurs more
+		 * than twice,leave the first occurence and delete the duplicate O/P= helwrd;
+		 */
+		Scanner se = new Scanner(System.in);
+		System.out.println("Enter String");
+		String s = se.next();
+
+		// String s = "helloworld";
 		String s1 = "";
 		int count = 0;
 
